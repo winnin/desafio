@@ -2,8 +2,8 @@ Muito Obrigado pelo seu interesse em trabalhar conosco
 
 # Desafios
 
-* [Frontend](https://github.com/winnin/desafio/FRONTEND.md)
-* [Backend](https://github.com/winnin/desafio/BACKEND.md)
+* [Frontend](https://github.com/winnin/desafio/blob/master/FRONTEND.md)
+* [Backend](https://github.com/winnin/desafio/blob/master/BACKEND.md)
 
 
 # Winnin
