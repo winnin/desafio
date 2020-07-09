@@ -10,7 +10,7 @@ O primeiro endpoint deve receber como parâmetro uma data inicial, uma data fina
 
 O segundo endpoint deve receber como parâmetro uma ordem (as ordens possíveis são número de "ups" e número de comentários) e deve retornar uma lista de usuários seguindo a ordem estipulada (em ordem decrescente)
 
-Você pode utilizar qualquer linguagem para resolver o desafio, mas preferimos que seja em node ou python (essas são as linguagens que utilizamos aqui).
+Você pode utilizar qualquer linguagem para resolver o desafio, mas preferimos que seja em Node ou Go (essas são as linguagens que utilizamos aqui).
 
 Além disso, não esqueça de incluir instruções sobre como executar o seu projeto.
 
