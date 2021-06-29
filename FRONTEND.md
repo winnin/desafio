@@ -6,6 +6,21 @@ Seu projeto DEVE ser feito usando a biblioteca React.
 
 Além disso, não esqueça de incluir instruções sobre como executar o seu projeto.
 
+O que vamos avaliar:
+- Se atende ao que foi pedido;
+- Uso dos padrões do React(Responsabilidade Única, Imutabilidade, Composição, Reatividade);
+- Organização dos componentes;
+- Controle dos estados;
+- Tratamento de erros;
+- Quantidade de bugs.
+
+Pontos extras:
+- Testes unitários;
+- Testes e2e;
+- Documentação;
+- Projeto rodando em algum serviço(Vercel, Netlify, etc);
+- Inclusão de outras funcionalidades(Dark mode, etc)
+
 Em caso de dúvidas entre em contato com a pessoa que te passou este desafio.
 
 Boa sorte.
