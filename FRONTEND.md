@@ -1,6 +1,6 @@
 # Desafio Frontend
 
-A prova consiste em ler dados da api do [reddit](https://www.reddit.com/dev/api/) do subreddit [reactjs](https://www.reddit.com/r/reactjs/) e criar uma tela contendo as informações que podem ser vistas no arquivo [frontend.psd](https://github.com/winnin/desafio/blob/master/frontend.psd) com três botões para navegar entre hot, new e rising.
+O desafio consiste em ler dados da api do Reddit, do subreddit [reactjs](https://www.reddit.com/r/reactjs/) e criar uma aplicação React contendo as informações que podem ser vistas no [Figma](https://www.figma.com/file/PPvIPPITdlgZo9CeGDVezk/DesafioWinnin?node-id=0%3A1) com três botões para navegar entre hot, new e rising.
 
 Seu projeto DEVE ser feito usando a biblioteca React.
 
