@@ -1,10 +1,12 @@
 # Desafio Frontend
 
-O desafio consiste em ler dados da api do Reddit, do subreddit [reactjs](https://www.reddit.com/r/reactjs/) e criar uma aplicação React contendo as informações que podem ser vistas no [Figma](https://www.figma.com/file/PPvIPPITdlgZo9CeGDVezk/DesafioWinnin?node-id=0%3A1) com três botões para navegar entre hot, new e rising.
+Você deve implementar uma aplicação que lista animes de acordo com o [Figma](https://www.figma.com/file/PPvIPPITdlgZo9CeGDVezk/DesafioWinnin?type=design&node-id=3396%3A64&mode=dev).
+A aplicação deve ser feita usando ReactJS, com ou sem NextJS.
+Deve ser feito utilizando a API [AniList](https://anilist.gitbook.io/anilist-apiv2-docs/overview/graphql/getting-started).
+O usuário pode aplicar filtro de formatos e também fazer busca por texto.
+Cada card de anime deve exibir o `averageScore` seguindo a regra: Abaixo de 50, vermelho, entre 50 e 80, amarelo, acima de 80, verde.
 
 É mandatório seguir e reproduzir as informações contidas no Figma.
-
-Seu projeto DEVE ser feito usando a biblioteca React.
 
 Além disso, não esqueça de incluir instruções sobre como executar o seu projeto.
 
