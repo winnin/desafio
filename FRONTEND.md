@@ -23,7 +23,7 @@ Pontos extras:
 - Testes e2e;
 - Documentação;
 - Projeto rodando em algum serviço(Vercel, Netlify, etc);
-- Inclusão de outras funcionalidades(Dark mode, etc)
+- Inclusão de outras funcionalidades(Dark mode, responsividade, mais filtros, mais páginas, etc)
 
 Em caso de dúvidas entre em contato com a pessoa que te passou este desafio.
 
