@@ -4,6 +4,7 @@ Muito Obrigado pelo seu interesse em trabalhar conosco
 
 * [Frontend](https://github.com/winnin/desafio/blob/master/FRONTEND.md)
 * [Backend](https://github.com/winnin/desafio/blob/master/BACKEND.md)
+* [Quality Assurance (QA)](https://github.com/winnin/desafio/blob/master/QA.md)
 
 
 # Winnin
