@@ -1,34 +1,61 @@
-# Desafio Backend
+# Desafio Backend - Sistema de Pedidos
 
-O desafio consiste em criar um programa que consulte a api do [reddit](https://www.reddit.com/dev/api/) uma vez por dia (deve ser uma tarefa agendada para rodar em um horário específico que você definir).
+## Introdução
 
-A sua tarefa diária deve salvar num banco de dados SQL as postagens que estejam HOT do subredit [artificial](https://api.reddit.com/r/artificial/hot).  
+A empresa _fictícia_ está crescendo rapidamente e precisa de uma API eficiente para gerenciar seus pedidos. Eles querem uma solução moderna, usando GraphQL, e precisam garantir que o banco de dados seja otimizado para consultas rápidas e seguras. Seu desafio é construir essa API!
 
-Você deve salvar título da postagem, nome do autor, timestamp da criação, número de "ups" e número de comentários, e criar dois endpoints para consulta desses dados (endpoints REST ou usando graphql).
+Você precisa criar uma API que permita:
 
-O primeiro endpoint deve receber como parâmetro uma data inicial, uma data final e uma ordem (as ordens possíveis são número de "ups" e número de comentários) e deve retornar as postagens criadas dentro desse range seguindo a ordem estipulada (em ordem decrescente)
+- Cadastrar usuários, listar usuários e seus pedidos, cadastrar produtos, listar produtos e emitir ordens de compra de produtos.
+- O sistema deve garantir que pedidos simultâneos sejam processados corretamente, mantendo a integridade do estoque. Se um pedido não puder ser concluído por falta de estoque, deve ser rejeitado com um erro apropriado.
+- Disponibilizar a API via GraphQL.
+- Dockerfile com um docker-compose para rodar o projeto
+- configurar um workflow no GitHub Actions (opcional)
+- API escrita preferencialmente em Nodejs ou Golang
 
-O segundo endpoint deve receber como parâmetro uma ordem (as ordens possíveis são número de "ups" e número de comentários) e deve retornar uma lista de autores seguindo a ordem estipulada (em ordem decrescente)
+Você será avaliado:
 
-Você pode utilizar qualquer linguagem para resolver o desafio, mas preferimos que seja em Node (é a linguagem que mais utilizamos aqui).
+- Nas decisões técnica adotadas para realização do desafio
+- Performance da API
+- Conhecimentos arquiteturais
 
-Além disso, não esqueça de incluir instruções sobre como executar o seu projeto.
+## Entrega
 
-O que vamos avaliar:
-- Se atende ao que foi pedido;
-- Arquitetura bem definida;
-- Legibilidade e organização;
-- Falhas de segurança;
-- Tratamento de erros;
-- Quantidade de bugs.
+- Um repositório com a API implementada
+- Documentação explicando as decisões técnicas.
 
-Pontos extras:
-- Testes unitários;
-- Uso de container;
-- Documentação;
-- Projeto rodando em algum serviço
+## Sugestão de estrura
 
+Aqui tem um direcionamento de estrutura para realização do desafio, lembrando que isso é só uma sugestão, fica a cargo de você decidir o que é melhor.
 
-Em caso de dúvidas entre em contato com a pessoa que te passou este desafio.
+```sql
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+);
 
-Boa sorte.
+CREATE TABLE products (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    stock INT NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE orders (
+    id SERIAL PRIMARY KEY,
+    user_id INT REFERENCES users(id),
+    total DECIMAL(10,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE order_items (
+    id SERIAL PRIMARY KEY,
+    order_id INT REFERENCES orders(id),
+    product_id INT REFERENCES products(id),
+    quantity INT NOT NULL,
+    price DECIMAL(10,2) NOT NULL
+);
+```
