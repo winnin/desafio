@@ -8,7 +8,7 @@ Você deve implementar uma pipeline para automatizar esta [aplicação](https://
 
 ## Bonus
 + Crie na AWS, utilizando Terraform, um recurso Lambda que faça uma chamada 'GET' a um endpoint que deve ser recebido como parâmetro.
-+ Chame esse recurso Lambda fazendo uma chamada 'GET' para 'google.com' toda vez que a imagem da aplicação for publicada no Docker Hub.
++ Chame esse recurso Lambda fazendo uma chamada 'GET' para o endpoint recebido como parâmetro toda vez que a imagem da aplicação for publicada no Docker Hub.
 
 ## Entrega
 Um repositório público contendo:
