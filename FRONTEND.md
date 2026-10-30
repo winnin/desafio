@@ -36,7 +36,7 @@ Em qualquer caso, inclua um **`DECISIONS.md`** (ou uma seção no README) com de
 ## Entrega
 
 - Repositório com o código.
-- README com instruções de como executar o projeto e rodar os testes, e o `DECISIONS.md` (e o `AI_LOG.md`, se usou IA).
+- README com instruções de como executar o projeto e rodar os testes, e as decisões técnicas em `DECISIONS.md` (ou em uma seção equivalente do README); o `AI_LOG.md` é necessário apenas se usou IA.
 - Projeto publicado em algum serviço (Vercel, Netlify etc.) é um bônus.
 
 ## Como avaliamos
